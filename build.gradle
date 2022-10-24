@@ -15,15 +15,15 @@ apply plugin: 'net.minecraftforge.gradle.tweaker-client'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'java'
 
-String tweakerClass = 'io.github.axst.launch.TCLTweaker'
-String tweaker = 'tcl'
+String tweakerClass = 'io.github.axst.winz.launch.WinzTweaker'
+String tweaker = 'winz'
 
 compileJava {
-	sourceCompatibility = targetCompatibility = 8
+	sourceCompatibility = targetCompatibility = JavaLanguageVersion.of(8)
 }
 
 version '1.8.9'
-group 'io.github.axst'
+group 'io.github.axst.winz'
 
 minecraft {
 	version = '1.8.9'
